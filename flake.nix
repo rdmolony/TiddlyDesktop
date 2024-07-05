@@ -11,7 +11,7 @@
       pkgs = import "${nixpkgs}" {
         system = "x86_64-linux";
       };
-    in pkgs.callPackage ./tiddlydesktop.nix { };
+    in pkgs.callPackage ./default.nix { };
 
     packages.x86_64-linux.default = self.packages.x86_64-linux.tiddlydesktop;
     
